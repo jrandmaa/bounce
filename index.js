@@ -1,9 +1,9 @@
 // const backgroundColor = [230,220,190];
-const myCanvas = { width: 600, height: 600};
+const myCanvas = { width: 585, height: 595};
 const backgroundColor = [0, 177, 86];
 const lineColor = [0, 0, 0];
 const activeLineColor = [190, 20, 110];
-const lineWidth = 3;
+const lineWidth = 5;
 const activelineWidth = 9;
 const sounds = Array.from({ length: 4 });
 
@@ -14,7 +14,7 @@ const ball1 = {
     speed: 0.5,
     fillColor: [40, 89, 198],
     strokeColor: [230,230,255],
-    ballStrokeWeight: 8,
+    ballStrokeWeight: 5,
     
 } 
 
@@ -25,7 +25,7 @@ const ball2 = {
     speed: 2,
     fillColor: [190,30,80],
     strokeColor: [255,230,230],
-    ballStrokeWeight: 8,
+    ballStrokeWeight: 5,
 
 } 
 
@@ -36,7 +36,7 @@ const ball3 = {
     speed: 2.7,
     fillColor: [190,80,230],
     strokeColor: [255,230,255],
-    ballStrokeWeight: 8,
+    ballStrokeWeight: 5,
     /*rightSound: sounds[4],
     leftSound: sounds[5],
     soundLength: 500,*/
@@ -54,9 +54,9 @@ const ball4 = {
 
 const leftEdge = {
     x1: 10,
-    y1: 0,
+    y1: 10,
     x2: 10,
-    y2: 600,
+    y2: 580,
     color: lineColor,
     width: lineWidth,
 
@@ -84,9 +84,9 @@ const topEdge = {
 
 const rightEdge = {
     x1: 570,
-    y1: 0,
+    y1: 10,
     x2: 570,
-    y2: 600,
+    y2: 580,
     color: lineColor,
     width: lineWidth,
 }
