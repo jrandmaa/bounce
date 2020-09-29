@@ -15,7 +15,6 @@ const ball1 = {
     fillColor: [40, 89, 198],
     strokeColor: [230,230,255],
     ballStrokeWeight: 5,
-    
 } 
 
 const ball2 = {
@@ -26,7 +25,6 @@ const ball2 = {
     fillColor: [190,30,80],
     strokeColor: [255,230,230],
     ballStrokeWeight: 5,
-
 } 
 
 const ball3 = {
@@ -37,9 +35,6 @@ const ball3 = {
     fillColor: [190,80,230],
     strokeColor: [255,230,255],
     ballStrokeWeight: 5,
-    /*rightSound: sounds[4],
-    leftSound: sounds[5],
-    soundLength: 500,*/
 } 
 
 const ball4 = {
@@ -104,13 +99,6 @@ function preload(){
 
     console.log(sounds);
 
-    /*ball1.rightSound = sounds[0];
-    ball1.leftSound = sounds[1];
-    ball2.rightSound = sounds[2];
-    ball2.leftSound = sounds[3];
-    ball3.rightSound = sounds[4];
-    ball3.leftSound = sounds[5];*/
-
     // for(let i = 0; i < sounds.length; i++){
     //     sounds[i] = loadSound(`sounds/${i}.mp3`)
     // }
@@ -150,27 +138,11 @@ function updateBall(ball){
         ball.speed *= -1;
         //ball.leftSound.play();
         activateLine(bottomEdge);
-    } /*else if(ball.y - ball.size/2 < ball2.y + ball2.size/2){
-      if(ball.y + ball.size/2 >= ball2.y - ball2.size/2){
-        if(sign(ball1.speed) != sign(ball2.speed)){
-          temp = ball2.speed;
-          ball2.speed = ball.speed;
-          ball.speed = temp;
-        }
-
-      }
-    }*/ 
-  
+    }
   balls.forEach((ball2) => {
     if(ball2 != ball){
       if(ball.y > ball2.y){ //above ball2
       if(ball.y - ball.size/2 <= ball2.y + ball2.size/2){
-        /*if(sign(ball1.speed) != sign(ball2.speed)){
-          temp = ball2.speed;
-          ball2.speed = ball.speed;
-          ball.speed = temp;
-          activateLine(rightEdge);
-        }*/
         temp = ball2.speed;
           ball2.speed = ball.speed;
           ball.speed = temp;
