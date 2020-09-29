@@ -1,6 +1,6 @@
 // const backgroundColor = [230,220,190];
 const myCanvas = { width: 600, height: 600};
-const backgroundColor = [230,220,190];
+const backgroundColor = [0, 177, 86];
 const lineColor = [0, 0, 0];
 const activeLineColor = [190, 20, 110];
 const lineWidth = 3;
@@ -12,9 +12,9 @@ const ball1 = {
     y: 100,
     size: 110,
     speed: 0.5,
-    fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    ballStrokeWeight: 2,
+    fillColor: [40, 89, 198],
+    strokeColor: [230,230,255],
+    ballStrokeWeight: 8,
     
 } 
 
@@ -23,9 +23,9 @@ const ball2 = {
     y: 300,
     size: 80,
     speed: 2,
-    fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    ballStrokeWeight: 2,
+    fillColor: [190,30,80],
+    strokeColor: [255,230,230],
+    ballStrokeWeight: 8,
 
 } 
 
@@ -35,8 +35,8 @@ const ball3 = {
     size: 60,
     speed: 2.7,
     fillColor: [190,80,230],
-    strokeColor: [0,220,20],
-    ballStrokeWeight: 2,
+    strokeColor: [255,230,255],
+    ballStrokeWeight: 8,
     /*rightSound: sounds[4],
     leftSound: sounds[5],
     soundLength: 500,*/
